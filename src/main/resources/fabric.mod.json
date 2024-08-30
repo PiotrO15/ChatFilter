@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "chatfilter",
+  "version": "${version}",
+  "name": "ChatFilter",
+  "description": "A simple mod for filtering unwanted chat messages",
+  "authors": ["PiotrO15"],
+  "contact": {
+    "repo": "https://github.com/PiotrO15/ChatFilter"
+  },
+  "license": "MIT",
+  "icon": " ",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "piotro15.chatfilter.ChatFilterClient"
+    ],
+    "modmenu": [
+      "piotro15.chatfilter.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "yet_another_config_lib_v3": ">=3.5.0"
+  },
+  "recommends": {
+    "modmenu": "*"
+  }
+}
